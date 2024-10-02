@@ -6,8 +6,8 @@
 
 | Parameter  | Explanation                                                                                           | Optional |
 | :--------- | :---------------------------------------------------------------------------------------------------- | :------- |
-| `udid`     | [The user's Universal Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier) | `False`  |
-| `username` | The username for the account the player is trying to log into                                         | `False`  |
+| `udid`     | [The user's Universal Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier) aka the uuid | `False`  |
+| `userName` | The username for the account the player is trying to log into                                         | `False`  |
 | `password` | The plaintext password for the account the player is trying to log into                               | `False`  |
 | `sID`      | The player's steam ID                                                                                 | `True`   |
 | `secret`   | Account Secret: `Wmfv3899gc9`                                                                         | `False`  |
@@ -28,7 +28,7 @@ If the request was not successful, there are 7 different error codes that can be
 
 | Error Code | Meaning                                                                                                   |
 | :--------- | :-------------------------------------------------------------------------------------------------------- |
-| `-1`       | Generic Error                                                                                             |
+| `-1`       | Generic Error (You fucked something up)                                                                   |
 | `-8`       | If the user's password is less than 6 characters long                                                     |
 | `-9`       | If the user's Username is less than 3 characters long                                                     |
 | `-11`      | If the user's login credentials are incorrect                                                             |
