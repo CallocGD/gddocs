@@ -1,6 +1,6 @@
 # LoginGJAccount
 
-> This endpoint is used to log into a players Geometry Dash account. This will also get your account into the registry when searching for the account upon fist login once you've hit the account registration email.
+> This endpoint is used to log into a players Geometry Dash account. This will also get your account into the registry when searching for the account upon first login once you've hit the account registration email.
 ```
 https://www.boomlings.com/database/accounts/loginGJAccount.php
 ```
