@@ -18,20 +18,40 @@ The level start object is still an object and formated exactly like a normal [le
 | kA1  | AudioTrack             | **Integer**                                 | The audio track which the level uses |
 | kA2  | Gamemode               | **[Gamemode](enumerations.md)**             | the gamemode the player starts with                                                                            |
 | kA3  | Mini Mode              | **bool**                                    | determines whether the player starts off as mini Mode                                                          |
-| kA4  | Speed                  | **[Speed](enumerations.md)**                | the speed of the level at the starts                                                                           |
+| kA4  | Speed                  | **[Speed](enumerations.md)**                | the speed of the level at the start                                                                            |
+| kA5  | Obj-2 Blending         | **bool**                                    | (deprecated since 1.9) Whether Object-2 (color channel 1) uses blending or not                                 |
 | kA6  | Background Texture ID  | **integer**                                 | the ID of the background texture that is being used in the level<br/>(enumerated in the same order as appears) |
 | kA7  | Ground Texture ID      | **integer**                                 | the ID of the ground texture that is being used in the level<br/>(enumerated in the same order as appears)     |
 | kA8  | Dual Mode              | **bool**                                    | determines whether the player starts off in dual Mode                                                          |
 | kA9  | Level/Start Pos Object | **bool**                                    | determines whether this object represents a Level Start or a Start Pos object (true for the latter)            |
 | kA10 | 2-Player Mode          | **bool**                                    | determines whether 2-Player Mode is toggled on for this level                                                  |
 | kA11 | Flip Gravity           | **bool**                                    | determines whether the player starts off in flipped Gravity                                                    |
+| kA12 | Color3 Blending (UNUSED)| **bool**                                   | Unused, apparently meant to determine whether color channel 3 is blending or not                               |
 | kA13 | Song Offset            | **float**                                   | the song offset in seconds from which the level begins                                                         |
 | kA14 | Guidelines             | **[Guideline String](guideline-string.md)** | the editor song guidelines of the level                                                                        |
 | kA15 | Fade In                | **bool**                                    | determines whether the song will fade in as soon as the level starts                                           |
 | kA16 | Fade Out               | **bool**                                    | determines whether the song will fade in as soon as the level ends                                             |
 | kA17 | Ground Line            | **integer**                                 | the ID of the ground line that is being used in the level                                                      |
 | kA18 | Font                   | **integer**                                 | the ID of the font that is being used in the level                                                             |
-| kA22 | Platformer Mode        | **Bool**                                    | If platformer Mode is toggled on or off (currently only available in the December 2019 2.2 leaks)              |
+| kA20 | Reverse Gameplay       | **bool**                                    | Whether gameplay is reversed at the start                                                                      |
+| kA22 | Platformer Mode        | **Bool**                                    | If the level is in Classic Mode (0) or Platformer Mode (1)                                                     |
+| kA25 | Middleground Texture ID| **integer**                                 | the ID of the middleground texture that is being used in the level<br/>(enumerated in the same order as appears)|
+| kA27 | Allow Multi-Rotation   | **bool**                                    | (Compatibility setting) Whether you can run multiple rotation actions on the same target group or not          |
+| kA28 | Mirror Mode            | **bool**                                    | Whether the screen is mirrored at the start                                                                    |
+| kA29 | Rotate Gameplay        | **bool**                                    | Whether gameplay is rotated at the start                                                                       |
+| kA31 | Enable Player Squeeze  | **bool**                                    | (Compatibility setting) Whether the player can be killed by being squeezed between 2 objects                   |
+| kA32 | Fix Gravity Bug        | **bool**                                    | (Compatibility setting) Whether the bug where flipped gravity behaves differently from normal is fixed         |
+| kA33 | Fix Negative Scale     | **bool**                                    | (Compatibility setting) Whether negatively scaled objects have correct hitboxes (1) or not (0)                 |
+| kA34 | Fix Robot Jump         | **bool**                                    | (Compatibility setting) Whether the robot can jump very high with a pad (0) or not (1)                         |
+| kA36 | Spawn Group            | **integer**                                 | The group at which the player spawns                                                                           |
+| kA37 | Dynamic Level Height   | **bool**                                    | (Compatiblity setting) Whether the level ceiling is affected by higher objects                                 |
+| kA38 | Sort Groups            | **bool**                                    | (Compatibility setting) Whether groups are spawn triggered left to right or not                                |
+| kA39 | Fix Radius Collision   | **bool**                                    | (Compatibility setting) Whether the player's hitbox has a circle for circular hazard collision or not          |
+| kA40 | Enable 2.2 Changes     | **bool**                                    | (Compatibility setting) Whether miscellaneous 2.2 changes are enabled or not                                   |
+| kA41 | Allow Static-Rotate    | **bool**                                    | (Compatibility setting) Whether static objects can be rotated or not                                           |
+| kA42 | Reverse Sync           | **bool**                                    | (Compatibility setting) Whether the player's speed is changed when reversing to preserve music sync            |
+| kA43 | No Time Penalty        | **bool**                                    | Whether you get a point penalty for time (0) or not (1) in platformer                                          |
+| kA45 | Decrease Boost Slide   | **bool**                                    | (Compatibility setting) Whether the player receives a lesser boost in Platformer when boosted by dash orb or moving platforms|
 | kS38 | Colors                 | **[Color String](color-string.md)**         | the color channels that are being used in this level                                                           |
 | kS39 | Color Page             | **integer**                                 | the color page which was last displayed in the color channel display window                                    |
 
@@ -77,7 +97,7 @@ Keys `kS16`-`kS20` used to determine the player color that was being used and th
 | 2     | Player Color 2 |
 
 ### Start Pos Object
-The Start Pos object has the same special properties the level start object has, with a few not working. `kA9` must be set to `1` in the case that the object is indeed a Start Pos.
+The Start Pos object has the same special properties the level start object has, with a few not working and with a few exclusive ones, listed at the bottom. `kA9` must be set to `1` in the case that the object is indeed a Start Pos.
 
 Specifically, the only functional properties in a Start Pos object are the ones involving gameplay state, thus excluding visual-related ones (BG/ground textures, font, colors, etc.)
 
@@ -85,6 +105,7 @@ Confirmed properties that do not work in the Start Pos:
 
 | Key  |
 |:-----|
+| kA5  |
 | kA6  |
 | kA7  |
 | kA10 |
@@ -94,3 +115,12 @@ Confirmed properties that do not work in the Start Pos:
 | kA16 |
 | kA18 |
 | kS*  |
+
+Since 2.2, the Start Pos object has its own unique properties that do not work in the Level Start object. This is a table of all of them:
+
+| Key  | Name                   | Type                                        | Description                                                                                                    |
+|:-----|:-----------------------|:--------------------------------------------|:---------------------------------------------------------------------------------------------------------------|
+| kA19 | Target Order           | **Integer**                                 | The Target Order property of the Start Pos                                                                     |
+| kA21 | Disable                | **bool**                                    | Whether the Start Pos is disabled                                                                              |
+| kA26 | Target Order           | **Integer**                                 | The Target Channel property of the Start Pos                                                                   |
+| kA35 | Reset Camera           | **bool**                                    | Whether the camera is reset when playing from this Start Pos                                                   |

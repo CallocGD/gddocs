@@ -10,7 +10,7 @@ A typical user server response is structured with a `key:value:key:value` pairin
 
 #### **User Example Response**
 ```md
-1:TheWylieMaster:2:84696119:13:67:17:176:10:4:11:16:3:1725:46:2991:4:33:8:0:18:0:19:0:50:0:20:../watch?v=dQw4w9WgXcQ:21:31:22:10:23:30:24:1:25:35:26:23:28:1:43:11:48:1:30:0:16:9276649:31:0:44:TheWylieMaster:45::49:0:38:0:39:0:40:0:41:1:29:1
+1:TheWylieMaster:2:84696119:13:73:17:251:10:4:11:16:51:21:3:2441:52:80:46:4062:4:42:8:0:18:0:19:0:50:1:20:%%00:21:31:22:10:23:30:24:86:25:35:26:23:28:1:43:11:48:1:53:1:54:5:30:283041:16:9276649:31::44:TheWylieMaster:45:wyliemaster:49:0:55:32,4,2,0,0,0,0,0,0,0,4,0:56:134,109,93,101,49,13,32,45:57:0,1,4,9,3,0,0:29:1
 ```
 <!-- tabs:end -->
 
@@ -27,8 +27,8 @@ A list of all known keys can be found in the table below
 | 7 | accountHighlight | **Integer** | The accountID of the player. Is used for highlighting the player on the leaderboards |
 | 8 | creatorpoints | **Integer** | The count of creatorpoints player have |
 | 9 | iconID | **Integer** | maybe... [link](https://github.com/gd-programming/gddocs/pull/16/files#r417926661) |
-| 10 | playerColor | **Integer** | First color of the player use |
-| 11 | playerColor2 | **Integer** | Second color of the player use |
+| 10 | color | **Integer** | First color of the player use |
+| 11 | color2 | **Integer** | Second color of the player use |
 | 13 | secretCoins | **Integer** | The count of coins player have |
 | 14 | iconType | **Integer** | The iconType of the player use |
 | 15 | special | **Integer** | The special number of the player use |
@@ -60,6 +60,13 @@ A list of all known keys can be found in the table below
 | 48 | accExplosion | **Integer** | The explosion number of the player use |
 | 49 | modlevel | **Integer** | 0: None, 1: Normal Mod(yellow), 2: Elder Mod(orange) |
 | 50 | commentHistoryState | **Integer** | 0: All, 1: Only friends, 2: None |
+| 51 | color3 | **Integer** | The ID of the player's glow color |
+| 52 | moons | **Integer** | The amount of moons the player has |
+| 53 | accSwing | **Integer** | The player's swing |
+| 54 | accJetpack | **Integer** | The player's jetpack |
+| 55 | demons | **String** | Breakdown of the player's demons, in the format `{easy},{medium},{hard}.{insane},{extreme},{easyPlatformer},{mediumPlatformer},{hardPlatformer},{insanePlatformer},{extremePlatformer},{weekly},{gauntlet}`
+| 56 | classicLevels | **String** | Breakdown of the player's classic mode non-demons, in the format `{auto},{easy},{normal},{hard},{harder},{insane},{daily},{gauntlet}`
+| 57 | platformerLevels | **String** | Breakdown of the player's platformer mode non-demons, in the format `{auto},{easy},{normal},{hard},{harder},{insane}`
 
 ### Trivia
 

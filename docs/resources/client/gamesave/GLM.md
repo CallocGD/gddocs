@@ -12,7 +12,7 @@ GLM_01 is used to store all progress the player has made on official levels
 
 ## GLM_02
 
-GLM_02 was used before the account system to keep track of who owned Specific levels, currently unused
+GLM_02 was used in the earliest versions of the game back when your local levels were stored in CCGameManager.dat instead of being separated to CCLocalLevels.dat, currently unused
 
 | Key | description |
 |:----|:------------|
@@ -183,3 +183,23 @@ GLM_19 is a dictionary of the folders for local levels
 | Key | Value |
 |:----|:------|
 | `{folder ID}` | `{Folder Name}` |
+
+## GLM_20 
+
+GLM_20 is a dictionary of all the editor smart templates you have saved
+
+| Key | description |
+|:----|:------------|
+| kCEK 10 | [level data](resources/client/gamesave/template.md) |
+
+## GLM_21 
+
+This GLM is unknown, but it presumably had something to do with lists. It was in 2.200 but is not in 2.206
+
+## GLM_22 
+
+GLM_22 is a dictionary of all your favorited lists
+
+| Key | description |
+|:----|:------------|
+| kCEK 12 | [level data](resources/client/gamesave/list.md) |

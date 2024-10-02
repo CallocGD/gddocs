@@ -6,11 +6,11 @@ Uploads a created level to the servers.
 
 ### Required Parameters
 
-**gameVersion** - The game version. Currently 21
+**gameVersion** - The game version. Currently 22
 
 **accountID** - The uploader's account ID
 
-**gjp** - The uploader's [GJP](./topics/encryption/gjp.md)
+**gjp2** - The uploader's [GJP2](./topics/encryption/gjp.md)
 
 **userName** - The uploader's username
 
@@ -22,7 +22,7 @@ Uploads a created level to the servers.
 
 **levelVersion** - The version number of the level
 
-**levelLength** - The length of the level as a number, where 0 is tiny and 4 is XL
+**levelLength** - The length of the level as a number, where 0 is tiny, 4 is XL and 5 is Platformer
 
 **audioTrack** - The [official song number](./reference.md) used in the level. Set to 0 if a newgrounds song is used
 
@@ -42,7 +42,7 @@ Uploads a created level to the servers.
 
 **requestedStars** - The requested star rating for the level. The number is not limited to 10
 
-**unlisted** - Set to 1 if the level should be unlisted and only viewable by friends
+**unlisted** - Set to 2 if the level should be unlisted and to 1 if the level should be only viewable by friends
 
 **ldm** - Set to 1 if the level should have a low detail checkbox
 
@@ -64,7 +64,7 @@ Uploads a created level to the servers.
 
 **levelInfo** - A random gzip compressed string
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 

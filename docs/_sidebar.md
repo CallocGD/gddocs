@@ -15,8 +15,10 @@
   - [Comment](/resources/server/comment.md)
   - [Friend Request](/resources/server/friendrequest.md)
   - [Gauntlet](/resources/server/gauntlet.md)
+  - [Hashes](/resources/server/hashes.md)
   - [Leaderboard Score](/resources/server/leaderboardscore.md)
   - [Level](/resources/server/level.md)
+  - [List](/resources/server/list.md)
   - [Map Pack](/resources/server/mappack.md)
   - [Message](/resources/server/message.md)
   - [Song](/resources/server/song.md)
@@ -31,14 +33,23 @@
     - [Game Variables](/resources/client/gamesave/gv.md)
     - [Achievements](/resources/client/gamesave/achievement.md)
     - [Quests](/resources/client/gamesave/quests.md)
+    - [Platformer UI](resources/client/gamesave/dpad.md)
+    - [Smart Templates](resources/client/gamesave/template.md)
+    - [Lists](resources/client/gamesave/list.md)
+    - [Enumerations](/resources/client/gamesave/enums.md)
 
   - [Level](/resources/client/level.md)
     - [Capacity String](/resources/client/level-components/capacity-string.md)
+    - [Enumerations](/resources/client/level-components/enumerations.md)
     - [Level Colors](/resources/client/level-components/level-colors.md)
     - [Inner Level String](/resources/client/level-components/inner-level-string.md)
     - [Level Object](/resources/client/level-components/level-object.md)
     - [Color String](/resources/client/level-components/color-string.md)
     - [Guideline String](/resources/client/level-components/guideline-string.md)
+    - [Particle String](/resources/client/level-components/particle-string.md)
+  
+  - [Music Library](/resources/client/musiclibrary.md)
+  - [SFX Library](/resources/client/sfxlibrary.md)
 **Endpoints**
 
 **Accounts**
@@ -59,13 +70,22 @@
   - [getGJGauntlets21](/endpoints/levels/getGJGauntlets21.md)
   - [getGJLevels21](/endpoints/levels/getGJLevels21.md)
   - [getGJLevelScores211](/endpoints/levels/getGJLevelScores211.md)
+  - [getGJLevelScoresPlat](/endpoints/levels/getGJLevelScoresPlat.md)
   - [getGJMapPacks21](/endpoints/levels/getGJMapPacks21.md)
   - [rateGJDemon21](/endpoints/levels/rateGJDemon21.md)
   - [rateGJStars211](/endpoints/levels/rateGJStars211.md)
   - [reportGJLevel](/endpoints/levels/reportGJLevel.md)
-  - [suggestGJStars](/endpoints/levels/suggestGJStars.md)
+  - [suggestGJStars20](/endpoints/levels/suggestGJStars.md)
   - [updateGJDesc20](/endpoints/levels/updateGJDesc20.md)
   - [uploadGJLevel21](/endpoints/levels/uploadGJLevel21.md)
+**Lists**
+  - [deleteGJLevelList](/endpoints/lists/deleteGJLevelList.md)
+  - [getGJLevelLists](/endpoints/lists/getGJLevelLists.md)
+  - [uploadGJLevelList](/endpoints/lists/uploadGJLevelList.md)
+**Multiplayer**
+  - [exitMPLobby](/endpoints/multiplayer/exitMPLobby.md)
+  - [joinMPLobby](/endpoints/multiplayer/joinMPLobby.md)
+  - [uploadMPComment](/endpoints/multiplayer/uploadMPComment.md)
 **Comments**
   - [deleteGJAccComment20](/endpoints/comments/deleteGJAccComment20.md)
   - [deleteGJComment20](/endpoints/comments/deleteGJComment20.md)
@@ -95,6 +115,8 @@
   - [getGJSongInfo](/endpoints/songs/getGJSongInfo.md)
   - [getGJTopArtists](/endpoints/songs/getGJTopArtists.md)
   - [testSong](/endpoints/songs/testSong.md)
+  - [musiclibrary.dat](/endpoints/songs/musiclibrary.md)
+  - [sfxlibrary.dat](/endpoints/songs/sfxlibrary.md)
 **Misc**
   - [getAccountURL](/endpoints/misc/getAccountURL.md)
   - [getSaveData](/endpoints/misc/getSaveData.md)
@@ -110,7 +132,8 @@
   - [Status Codes](/topics/status_codes.md)
   - [Vault Codes](/topics/vault_codes.md)
   - [Shop](/topics/shop)
-  - [Tags](/topics/tags)  
+  - [Tags](/topics/tags)
+  - [CDN Tokens](/topics/cdn_token.md)
 
 
 - **Algorithms**

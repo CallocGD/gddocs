@@ -7,6 +7,9 @@
 | 7   | [GJChallengeItem](resources/client/gamesave/quests.md) | Contains Keys that the game uses to show quests when offline |
 | 8   | [GJRewardItem](resources/client/gamesave/kCEK.md) | object that holds `GJRewardObject` |
 | 9   | [GJRewardObject](resources/client/gamesave/kCEK.md) | contains data for Rewards |
+| 10  | [GJSmartTemplate](resources/client/gamesave/template.md) | Contains data about smart template |
+| 11  | [GJSmartRefab](resources/client/gamesave/template.md) | Contains data for presets in smart template |
+| 12  | [GJLevelList](/resources/client/gamesave/list.md)        | Contains keys for level lists | 
 
 ## kCEK 8 and 9 Structure
 
@@ -35,6 +38,11 @@
 | 7 | Orbs |
 | 8 | Diamonds |
 | 9 | Custom Object (shares the same ID for Demon guardian key, icons and colours) |
+| 10| Earth Shard |
+| 11| Blood Shard |
+| 12| Metal Shard |
+| 13| Light Shard |
+| 14| Soul Shard |
 
 ### GJRewardItem GS Keys
 

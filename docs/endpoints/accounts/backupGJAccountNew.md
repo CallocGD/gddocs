@@ -2,7 +2,7 @@
 
 Saves account data
 
-**Note:** This page is on the account server. You can find the domain name by sending a request to /database/getAccountURL.php (currently http://www.robtopgames.net) 
+**Note:** This page is on the account server. You can find the domain name by sending a request to /database/getAccountURL.php (currently http://www.robtopgames.org) 
 
 ## Parameters
 
@@ -12,9 +12,9 @@ Saves account data
 
 **password** - The password of the account to be added
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **saveData** - The save data for CCGameManager.dat compressed with gzip, then a semicolon `;` and the save data for CCLocalLevels.dat compressed with gzip.
 
@@ -46,7 +46,7 @@ data = {
     "secret": "Wmfv3899gc9"
 }
 
-req = requests.post("http://www.robtopgames.net/database/accounts/backupGJAccountNew.php", data=data)
+req = requests.post("http://www.robtopgames.org/database/accounts/backupGJAccountNew.php", data=data)
 print(req.text)
 ```
 

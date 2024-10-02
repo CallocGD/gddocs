@@ -8,7 +8,7 @@ Blocks a user.
 
 **accountID** - The blocking person's account ID
 
-**gjp** - The blocking person's [GJP](/topics/encryption/gjp.md)
+**gjp2** - The blocking person's [GJP2](/topics/encryption/gjp.md)
 
 **targetAccountID** - The account ID of the person being blocked
 
@@ -16,9 +16,9 @@ Blocks a user.
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 

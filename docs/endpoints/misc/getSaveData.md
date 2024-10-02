@@ -10,15 +10,15 @@ Unknown
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 
 ## Response
 
-Returns seemingly random [urlsafe base64](/topics/encryption/base64.md) encoded text
+Used to return seemingly random [urlsafe base64](/topics/encryption/base64.md) encoded text, but as of 2.2 just returns nothing. The base64 text can be found below
 
 ## Example
 

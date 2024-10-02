@@ -1,4 +1,4 @@
-# Server Song Resource
+# Client & Server Song Resource
 
 ## Song
 
@@ -24,6 +24,8 @@ A typical song server response is structured with a `key~|~value~|~key~|~value` 
 Each `key` is tied to a component within the client and the `value` sets data for the specific component.  
 A list of all known keys can be found in the table below
 
+The IDs for Music Library songs start at 10,000,000
+
 #### Song Structure
 
 | Key | Name/Value                | Type                                         | Description                                                              
@@ -38,4 +40,11 @@ A list of all known keys can be found in the table below
 | 8   | isVerified				  | **Bool**									 | if the song artist is scouted on newgrounds
 | 9   | songPriority              | **Integer**                                  | priority over the song list
 | 10  | link					  | **String**									 | Link to the song's mp3
+| 11  | nongEnum        | **Integer** | Type of NONG. 0 for none, 1 for NCS.
+| 12  | extraArtistIDs  | **Array\[Integer]** | IDs of extra artists, separated by `.`
+| 13  | new             | **Boolean** | Whether the NEW icon shows up or not
+| 14  | newType         | **Integer** | Type of NEW icon. 0 for Yellow, 1 for Blue
+| 15  | extraArtistNames | **Array** | Artist names in this format: `{id},{name},{id},{name}`
 
+#### **Trivia**
+- The savefile song structure uses the exact same keys as the server response

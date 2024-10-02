@@ -2,7 +2,7 @@
 
 ## RestoreGJItems
 
-`Restore` was a feature used in Geometry dash from versions `1.7 - 2.0` and it was used as an alternative to the [Account System](/topics/accounts.md) that is currently used as of 2.11
+`Restore` was a feature used in Geometry dash from versions `1.7 - 2.0` and it was used as an alternative to the [Account System](/topics/accounts.md) that is currently used as of 2.206
 
 A typical Gauntlet Server response is structured with a `key:value:key:value` pairing  
 *Official Levels behave a bit differently as you will find out further into his page*

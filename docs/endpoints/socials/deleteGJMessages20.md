@@ -8,7 +8,7 @@ Deletes a message between two users.
 
 **accountID** - The account ID of the user who is deleting the message
 
-**gjp** - The [GJP](/topics/encryption/gjp.md) of the user who is deleting the message
+**gjp2** - The [GJP2](/topics/encryption/gjp.md) of the user who is deleting the message
 
 **messageID** - ID of the message being deleted
 
@@ -18,9 +18,9 @@ Deletes a message between two users.
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 

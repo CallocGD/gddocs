@@ -8,8 +8,15 @@
 
 - The key used by Geometry Dash is:
 
+
+- **Hexadecimal**
   ```md
   69 70 75 39 54 55 76 35 34 79 76 5d 69 73 46 4d 68 35 40 3b 74 2e 35 77 33 34 45 32 52 79 40 7b
+  ```
+
+- **Plaintext**
+  ```
+  ipu9TUv54yv]isFMh5@;t.5w34E2Ry@{
   ```
 
 ## Padding

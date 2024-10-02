@@ -10,13 +10,13 @@ Likes a level, comment, etc.
 
 **itemID** - The ID of the level, comment, or account comment
 
-**type** - 1 for level, 2 for level comment, 3 for account comment.
+**type** - 1 for level, 2 for level comment, 3 for account comment, 4 for list
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 
@@ -29,6 +29,8 @@ Likes a level, comment, etc.
 **uuid** - The liking/disliking person's [uuid](/topics/encryption/id?id=uuid)
 
 **like** - 0 is dislike, 1 is like. Not sure what it defaults to if left out, but it can be left out.
+
+**chk** - [See here](/topics/encryption/chk.md?id=like)
 
 ## Response
 

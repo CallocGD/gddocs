@@ -8,7 +8,7 @@ Sends a message to a user
 
 **accountID** - Account ID of the user sending the message
 
-**gjp** - The [GJP](/topics/encryption/gjp.md) of the user sending the message
+**gjp2** - The [GJP2](/topics/encryption/gjp.md) of the user sending the message
 
 **toAccountID** - Account ID of the user retrieving the message
 
@@ -20,9 +20,9 @@ Sends a message to a user
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 

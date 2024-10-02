@@ -7,13 +7,17 @@ Value Keeper is a giant Dictionary found in CCGameManager.dat that contains the 
 | prefix | Description |
 |:-------|:------------|
 | [gv_{ID}](/resources/client/gamesave/gv.md) | enabled Game Variables |
-| i_{ID} | The playerCubes you have unlocked |
-| ship_{ID} | The PlayerShips you have unlocked |
-| ball_{ID} | The PlayerBalls you have unlocked |
-| bird_{ID} | The PlayerBirdss you have unlocked |   
-| dart_{ID} | The PlayerDarts you have unlocked |
-| robot_{ID} | The PlayerRobots you have unlocked |
+| i_{ID} | The cubes you have unlocked |
+| ship_{ID} | The ships you have unlocked |
+| ball_{ID} | The balls you have unlocked |
+| bird_{ID} | The birds you have unlocked |   
+| dart_{ID} | The waves you have unlocked |
+| robot_{ID} | The robots you have unlocked |
+| spider_{ID} | The spiders you have unlocked |
+| swing_{ID} | The swings you have unlocked |
+| jetpack_{ID} | The jetpacks you have unlocked |
 | special_{ID} | The PlayerStreaks you have unlocked|
 | c0_{ID} | The Colour1's you have unlocked |
 | c1_{ID} | The Colour2's you have unlocked |
 | death_{ID} | Unlocked Death Effects |
+| shipstreak_{ID} | Unlocked ship streaks |

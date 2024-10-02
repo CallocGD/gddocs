@@ -6,7 +6,7 @@
 
 | Key     | Usage                       | XOR Type |
 | :------ | :-------------------------- | :------- |
-| `11`    | Player Save Data            | Static   |
+| `11`    | Player Save Data            | Singular |
 | `14251` | Player Messages             | Cycled   |
 | `19283` | Vault Codes                 | Cycled   |
 | `19847` | Daily Challenges            | Cycled   |
@@ -16,9 +16,11 @@
 | `39673` | Level Leaderboard Integrity | Cycled   |
 | `41274` | Level Integrity             | Cycled   |
 | `48291` | Load Data                   | Cycled   |
-| `58281` | Rating Integry              | Cycled   |
+| `52832` | Multiplayer                 | Cycled   |
+| `57709` | Music/SFX Library Secret    | Cycled   |
+| `58281` | Rating Integrity            | Cycled   |
 | `59182` | Chest Rewards               | Cycled   |
-| `85271` | Stat submission Integrity   | Cycled   |
+| `85271` | Stat Submission Integrity   | Cycled   |
 
 ## XOR Types
 

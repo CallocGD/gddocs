@@ -8,7 +8,7 @@ Updates a user's account settings
 
 **accountID** - The accountID of the user whose account is being updated
 
-**gjp** - The [GJP](/topics/encryption/gjp.md) of the user whose account is being updated
+**gjp2** - The [GJP2](/topics/encryption/gjp.md) of the user whose account is being updated
 
 **secret** - Wmfv3899gc9
 
@@ -51,7 +51,7 @@ data = {
     "twitch": "devexit"
 }
 
-req = requests.post('http://boomlings.com/database/updateGJAccSettings20.php', data=data)
+req = requests.post('https://www.boomlings.com/database/updateGJAccSettings20.php', data=data)
 print(req.text)
 ```
 

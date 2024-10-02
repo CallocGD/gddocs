@@ -6,9 +6,9 @@ Rates the demon difficulty of a demon level - only works for Geometry Dash moder
 
 ### Required Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **secret** - Wmfp3897gc3
 

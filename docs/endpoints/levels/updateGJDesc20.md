@@ -8,7 +8,7 @@ Updates the description of a level
 
 **accountID** - The account ID of the level's author
 
-**gjp** - The [GJP](/topics/encryption/gjp.md) of the level's author
+**gjp2** - The [GJP2](/topics/encryption/gjp.md) of the level's author
 
 **levelID** - The ID of the level
 
@@ -18,9 +18,9 @@ Updates the description of a level
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 

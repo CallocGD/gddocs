@@ -10,9 +10,9 @@ Gets the gauntlet levels.
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 
@@ -20,7 +20,7 @@ Gets the gauntlet levels.
 
 ## Response
 
-A list of [gauntlet objects](/resources/server/gauntlet.md), separated by a pipe `|`.
+A list of [gauntlet objects](/resources/server/gauntlet.md), separated by a pipe `|`, followed by a `#` and then a [hash](/resources/server/hashes.md?id=getgjgauntlets).
 
 ## Example
 

@@ -54,11 +54,16 @@ On MacOS, decryption is quite simpler. Saves are encrypted with
 
 <!-- tabs:start -->
 
-### **Plain**
+### **Hexadecimal**
+  ```md
+  69 70 75 39 54 55 76 35 34 79 76 5d 69 73 46 4d 68 35 40 3b 74 2e 35 77 33 34 45 32 52 79 40 7b
+  ```
 
-```plain
-69 70 75 39 54 55 76 35 34 79 76 5d 69 73 46 4d 68 35 40 3b 74 2e 35 77 33 34 45 32 52 79 40 7b
-```
+### **Plaintext**
+  ```
+  ipu9TUv54yv]isFMh5@;t.5w34E2Ry@{
+  ```
+
 
 ### **Python**
 
@@ -96,6 +101,8 @@ def mac_decrypt(data: bytes) -> str:
 <!-- tabs:end -->
 
 ## Encryption
+
+Note that you don't actually need to reencrypt the save file in order for the game to accept it.
 
 ### Windows
 

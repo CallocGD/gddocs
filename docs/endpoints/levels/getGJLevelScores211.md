@@ -8,7 +8,7 @@ Fetches the leaderboard for a level and submits your level stats to the server
 
 **accountID** - The user's account ID
 
-**gjp** - The user's [GJP](/topics/encryption/gjp.md)
+**gjp2** - The user's [GJP2](/topics/encryption/gjp.md)
 
 **levelID** - The ID of the level
 
@@ -16,11 +16,17 @@ Fetches the leaderboard for a level and submits your level stats to the server
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
+
+**time** - Your time in milliseconds. Always 0 for this endpoint
+
+**points** - Your points. Always 0 for this endpoint
+
+**plat** - Always 0 for this endpoint
 
 **percent** - The percent the user has on the level. Will not update if left out, but still retrieves data
 

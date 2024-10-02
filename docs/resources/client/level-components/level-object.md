@@ -44,6 +44,8 @@ Property keys reflect the keys found in the following table, whereas property va
 ### Level Object Data
 **Level Object Structure**
 
+2.2 adds a ton of new object properties. Most of the object properties can be found [here](https://flowvix.github.io/gd-info-explorer/). You can access the old table of object properties (with all 2.1 properties and a few 2.2 properties) below if you need it for whatever reason.
+
 | Key | Name/Value                           | Type                                            | Description                                                                        |
 |:----|:-------------------------------------|:------------------------------------------------|:-----------------------------------------------------------------------------------|
 | 1   | Object ID                            | **integer**                                     | the ID of the object                                                               |
@@ -55,7 +57,7 @@ Property keys reflect the keys found in the following table, whereas property va
 | 7   | Red                                  | **integer**                                     | the Red component of the color in a trigger                                        |
 | 8   | Green                                | **integer**                                     | the Green component of the color in a trigger                                      |
 | 9   | Blue                                 | **integer**                                     | the Blue component of the color in a trigger                                       |
-| 10  | Duration                             | **float**                                       | the duration of an effect in a trigger                                             |
+| 10  | Duration                             | **float**                                       | the duration of an effect in a trigger. In the random trigger, this is the chance instead|
 | 11  | Touch Triggered                      | **bool**                                        | the Touch Triggered property of a trigger                                          |
 | 12  | Secret Coin ID                       | **integer**                                     | the ID of a Secret Coin                                                            |
 | 13  | Special Object Checked               | **bool**                                        | the checked property of some special objects (gamemode, speed, dual portals, etc.) |
@@ -133,16 +135,31 @@ Property keys reflect the keys found in the following table, whereas property va
 | 96  | Disable Glow                         | **bool**                                        | the Disable Glow property of the object                                            |
 | 97  | Custom Rotation Speed                | **float**                                       | the Custom Rotation Speed property of the rotating object in degrees per second    |
 | 98  | Disable Rotation                     | **bool**                                        | the Disable Rotation property of the rotating object                               |
-| 99  | Multi Activate (Orbs)                      | **bool**                                        | the Multi Activate property of Orbs                                   |
+| 99  | Multi Activate (Orbs)                | **bool**                                        | the Multi Activate property of Orbs                                                |
 | 100 | Enable Use Target                    | **bool**                                        | the Enable Use Target property of the Move trigger                                 |
 | 101 | Target Pos Coordinates               | **[Target Pos Coordinates](enumerations.md)**   | the Target Pos Coordinates property of the Move trigger                            |
 | 102 | Editor Disable                       | **bool**                                        | the Editor Disable property of the Spawn trigger                                   |
 | 103 | High Detail                          | **bool**                                        | the High Detail property of the object                                             |
-| 104 | Multi Activate (Triggers)                         | **bool**                                        | The Multi Activate Property of Triggers                                          |
+| 104 | Multi Activate (Triggers)            | **bool**                                        | The Multi Activate Property of Triggers                                            |
 | 105 | Max Speed                            | **float**                                       | the Max Speed property of the Follow Player Y trigger                              |
 | 106 | Randomize Start                      | **bool**                                        | the Randomize Start property of the animated object                                |
 | 107 | Animation Speed                      | **float**                                       | the Animation Speed property of the animated object                                |
 | 108 | Linked Group ID                      | **integer**                                     | the Linked Group ID property of the object                                         |
+| 110 | Exit Static                          | **bool**                                        | the Exit Static property of the Static Camera trigger                              |
+| 111 | Free Mode                            | **bool**                                        | the Free Mode property of the Camera Mode trigger or portal                        |
+| 112 | Edit Camera Settings                 | **bool**                                        | the Edit Camera Settings property of the Camera Mode trigger or portal             |
+| 113 | Easing (Free Mode)                   | **integer**                                     | the Easing property in a Camera Mode trigger or portal                             |
+| 114 | Padding                              | **float**                                       | the Paddding property in a Camera Mode trigger or portal                           |
+| 115 | ord                                  | **integer**                                     | the Ord property of the object                                                     |
+| 116 | No Effects                           | **bool**                                        | Whether the object doesn't emit any special effects (e.g. portal flash)            |
+| 117 | Reverse                              | **bool**                                        | Whether the orb/pad reverses your direction                                        |
+| 120 | Time Mod                             | **float**                                       | The time modifier in the Time Warp trigger                                         |
+| 121 | No Touch                             | **bool**                                        | Whether the object has no hitbox                                                   |
+| 128 | Scale X                              | **float**                                       | The X Scale of the object                                                          |
+| 128 | Scale X                              | **float**                                       | The X Scale of the object                                                          |
+| 131 | Warp Y angle                         | **float**                                       | The Y angle warp value of the object                                               |
+| 132 | Warp X angle                         | **float**                                       | The X angle warp value of the object                                               |
+
 
 ***Undiscovered Existing Features***
 
@@ -152,6 +169,8 @@ The following features are discovered in current local save files, however their
 |:----|:------------|:---------------------------------------------------------------------------------------------------|
 | 36  | **bool**    | suspected to be handling whether an object's X position is locked and unaffected by a Move trigger |
 | 74  | **bool**(?) | only found in the Follow Player Y trigger                                                          |
+| 155 | **integer** | Suspected to be something related to optimizing colors. Appears on all objects                     |
+| 156 | **integer** | Same as 155                                                                                        |
 
 ***Potentially Discarded Features***
 

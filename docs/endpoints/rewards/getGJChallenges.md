@@ -14,15 +14,15 @@ Gets a user's quests.
 
 ### Optional Parameters
 
-**gameVersion** - 20
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 
 **accountID** - Account ID of the user
 
-**gjp** - The user's [GJP](/topics/encryption/gjp.md)
+**gjp2** - The user's [GJP2](/topics/encryption/gjp.md)
 
 **uuid** - Seemingly a random number also used for identifying someone
 
@@ -46,7 +46,7 @@ A list of attributes of the quests, separated by colons `:` as follows:
 - Second quest's attributes in a comma separated list
 - Third quest's attributes in a comma separated list
 
-This list is then [XOR](/topics/encryption/xor.md)'d and [URL-Safe Base64](/topics/encryption/base64.md) encoded. Then it is separated with its hash by a pipe `|`. It also has a random string of 5 characters appended to the front.
+This list is then [XOR](/topics/encryption/xor.md)'d and [URL-Safe Base64](/topics/encryption/base64.md) encoded. Then it is separated with its [hash](/resources/server/hashes.md?id-getgjchallenges) by a pipe `|`. It also has a random string of 5 characters appended to the front.
 
 ## Example
 

@@ -6,7 +6,7 @@ Gets the rewards from the chests.
 
 ### Required Parameters
 
-**udid** - A unique identifier for the user's device, can be replaced with anything
+**udid** - A unique identifier for the user's device. You can put anything here
 
 **secret** - Wmfd2893gb7
 
@@ -14,19 +14,19 @@ Gets the rewards from the chests.
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 
 **accountID** - Account ID of the user
 
-**gjp** - The user's [GJP](/topics/encryption/gjp.md)
+**gjp2** - The user's [GJP2](/topics/encryption/gjp.md)
 
 **uuid** - Seemingly a random number also used for identifying someone
 
-**rewardType** - 1 for small chest, 2 for large chest. Defaults to 0 if left out
+**rewardType** - 0 for getting info about the chests, 1 for small chest, 2 for large chest. Defaults to 0 if left out
 
 **r1** - A random 3-5 digit number
 
@@ -44,14 +44,15 @@ A list of attributes of the Rewards, separated by colons `:` as follows:
 - Small chest's rewards in a comma separated list
 	- Orbs
 	- Diamonds
-	- Shards (0 is Fire, 1 is Ice, 2 is Poison, 3 is Shadow, and 4 is Lava)
-	- Key (If it's not 0, give a key)
+	- Item 1 (1 is Fire, 2 is Ice, 3 is Poison, 4 is Shadow, 5 is Lava, 6 is Demon Key, 10 is Earth, 11 is Blood, 12 is Metal, 13 is Light and 14 is Soul)
+	- Item 2
+- Amount of small chests claimed
 - Large chest time remaining
 - Large chest's rewards in a comma separated list
-- Maybe the amount of rewards claimed?
+- Amount of large chests claimed
 - `rewardType`
 
-This list is then [XOR](/topics/encryption/xor.md)'d and [URL-Safe Base64](/topics/encryption/base64.md) encoded. Then it is separated with its hash by a pipe `|`. It also has a random string of 5 characters appended to the front.
+This list is then [XOR](/topics/encryption/xor.md)'d and [URL-Safe Base64](/topics/encryption/base64.md) encoded. Then it is separated with its [hash](/resources/server/hashes.md?id=getgjrewards) by a pipe `|`. It also has a random string of 5 characters appended to the front.
 
 ## Example
 

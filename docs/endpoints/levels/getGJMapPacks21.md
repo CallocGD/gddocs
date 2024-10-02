@@ -10,9 +10,9 @@ Gets the map packs.
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 
@@ -20,7 +20,15 @@ Gets the map packs.
 
 ## Response
 
-A list of [map pack](/resources/server/mappack.md) objects, separated by a pipe `|`.
+The response is formatted as follows:
+
+`packs#page#hash`
+
+where:
+
+- Packs is a list of [map pack](/resources/server/mappack.md) objects, separated by a pipe `|
+- Page is the page data in this format: `{total packs}:{current offset}:{page size}`
+- [Hash](/resources/server/hashes.md?id=getgjmappacks) used to validate the request by the GD client
 
 ## Example
 

@@ -2,23 +2,23 @@
 
 Loads account data
 
-**Note:** This page is on the account server. You can find the domain name by sending a request to /database/getAccountURL.php (currently http://www.robtopgames.net) 
+**Note:** This page is on the account server. You can find the domain name by sending a request to /database/getAccountURL.php (currently http://www.robtopgames.org) 
 
 ## Parameters
 
 ### Required Parameters
 
-**userName** - The username of the account to be added
+**accountID** - The account ID of the account to be added
 
-**password** - The password of the account to be added
+**gjp2** - The password of the account to be added with [GJP2](/topics/gjp.md) encryption
 
 **secret** - Wmfv3899gc9
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 
@@ -34,7 +34,7 @@ A list of values, separated by semicolons `;`:
 
 - a list of rated levels separated by commas `,`, in the format `[levelID],[stars]`, compressed with deflate and a random string of *20* characters at the front and back
 
-- a list of map pack objects separated by pipes `|`, with keys 1, 3, 4 and 5, compressed with deflate and a random string of *20* characters at the front and back
+- a list of [map pack objects](/resources/server/mappack.md) separated by pipes `|`, with keys 1, 3, 4 and 5, compressed with deflate and a random string of *20* characters at the front and back
 
 ## Example
 
@@ -46,12 +46,12 @@ A list of values, separated by semicolons `;`:
 import requests
 
 data = {
-    "userName": "APIAccount",
-    "password": "********", # This would be APIAccount's password
+    "accountID": 23590959, # This would be APIAccount's account ID
+    "gjp2": "********", # This would be APIAccount's password with GJP2 encryption
     "secret": "Wmfv3899gc9"
 }
 
-req = requests.post("http://www.robtopgames.net/database/accounts/syncGJAccountNew.php", data=data)
+req = requests.post("http://www.robtopgames.org/database/accounts/syncGJAccountNew.php", data=data)
 print(req.text)
 ```
 

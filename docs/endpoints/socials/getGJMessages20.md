@@ -8,15 +8,15 @@ Gets a user's DMs.
 
 **accountID** - The user's account ID
 
-**gjp** - The user's [GJP](/topics/encryption/gjp.md)
+**gjp2** - The user's [GJP2](/topics/encryption/gjp.md)
 
 **secret** - Wmfd2893gb7
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 
@@ -43,7 +43,7 @@ import requests
 
 data = {
     "accountID": 173831, # DevExit's account ID
-    "gjp": "********", # This would be DevExit's password encoded with GJP encryption
+    "gjp2": "********", # This would be DevExit's password encoded with GJP2 encryption
     "secret": "Wmfd2893gb7"
 }
 

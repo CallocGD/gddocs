@@ -8,15 +8,15 @@ Gets either your friend list or your blocked list
 
 **accountID** - The account ID of the user you want to get the friends/blocklist of
 
-**gjp** - The [GJP](/topics/encryption/gjp.md) of the user you want to get the friends/blocklist of
+**gjp2** - The [GJP2](/topics/encryption/gjp.md) of the user you want to get the friends/blocklist of
 
 **secret** - Wmfd2893gb7
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 
@@ -37,7 +37,7 @@ import requests
 
 data = {
         "accountID": 173831, # DevExit's account ID
-        "gjp": "********", # This would be DevExit's password encoded with GJP encryption
+        "gjp2": "********", # This would be DevExit's password encoded with GJP2 encryption
         "secret": "Wmfd2893gb7"
 }
 

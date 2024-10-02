@@ -12,9 +12,9 @@ Downloads a user level and info so it can be played.
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 
@@ -36,7 +36,16 @@ Downloads a user level and info so it can be played.
 
 ## Response
 
-Returns a [level object](/resources/server/level.md).
+Returns a [level object](/resources/server/level.md) along with 2 hashes. All of this is separated by `#`. If binary version is 42 or higher, returns data in the following format:
+```
+{level}#{hash1}#{hash2}#{unk}#{songMetadata}#{extraArtists}
+```
+where:
+- `{level}` is the level object
+- `{hash1}` and `{hash2}` are integrity [hashes](/resources/server/hashes.md?id=downloadgjlevel) the GD client uses to validate the response
+- `{unk}` is always an empty string. It's unknown if this segment even exists or if the response is just split with 2 `#` characters.
+- `{songMetadata}` is the metadata of all the [songs](/resources/server/song.md) used in the level.
+- `{extraArtists}` is a key-value pair map of extra artists in the songs. It uses the following format: `{id},{name},{id},{name}...`
 
 ## Example
 

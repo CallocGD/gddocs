@@ -64,18 +64,19 @@ Here are all of the different color id's:
 | `1 - 999` | **Custom colors** | These are the colors that are avalible for the creator to use |
 | `1000`    | **BG**            | This is the color of the background |
 | `1001`    | **G1**            | This is the primary color of the ground |
-| `1002`    | **LINE**          | This is the color of the ground line |
+| `1002`    | **Line**          | This is the color of the ground line |
 | `1003`    | **3DL**           | This is the color of the 3D line objects |
-| `1004`    | **OBJ**           | This is the OBJ color |
+| `1004`    | **Obj**           | This is the OBJ color |
 | `1005`    | **P1**            | This is the static color channel refering to the primary color of the player's icon |
 | `1006`    | **P2**            | This is the static color channel refering to the secondary color of the player's icon |
 | `1007`    | **LBG**           | This is the static color channel that is a lighter version of `BG` |
 | `1009`    | **G2**            | This is the secondary color of the ground |
-| `1010`    | **BLACK**         | This is the static color channel which is always `r: 0, g: 0, b: 0`. Used in saws that are black by default |
+| `1010`    | **Black**         | This is the static color channel which is always `r: 0, g: 0, b: 0`. Used in saws that are black by default |
+| `1011`    | **White**         | This is the static color channel which is always `r: 255, g: 255, b: 255`. |
+| `1012`    | **Lighter**       | A lighter version of the primary color in objects. Used in the white small blocks found in `build tab 2 on page 6`. |
+| `1013`    | **MG**            | This is the primary color of the middleground |
+| `1014`    | **MG2**           | This is the secondary color of the middleground |
 
-### Undiscovered color channel IDs
-`WHITE`: Static color that is always `r: 255, g: 255, b: 255`  
-`LIGHTER`: A lighter version of the primary color in objects. Used in the white small blocks found in `build tab 2 on page 6`.
 
 ### 1.9 color channel ID's
 GD's 1.9 version used a different ID scheme to identify color channels. In 2.0+, these IDs are still present, but only used in the legacy `1.9 Color Channel ID` property of 1.9 objects. They are as follows:

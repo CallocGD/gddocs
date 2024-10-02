@@ -8,7 +8,7 @@ Posts an account comment
 
 **accountID** - Account ID of the user posting the comment
 
-**gjp** - The [GJP](/topics/encryption/gjp.md) of the user posting the comment
+**gjp2** - The [GJP2](/topics/encryption/gjp.md) of the user posting the comment
 
 **comment** - The comment's text, converted to [URL-safe base64](/topics/encryption/base64).
 
@@ -16,9 +16,9 @@ Posts an account comment
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 

@@ -8,7 +8,7 @@ Uploads a comment to a user level.
 
 **accountID** - The commenter's account ID
 
-**gjp** - The commenter's [GJP](/topics/encryption/gjp.md)
+**gjp2** - The commenter's [GJP2](/topics/encryption/gjp.md)
 
 **userName** - The commenter's username
 
@@ -16,7 +16,7 @@ Uploads a comment to a user level.
 
 **secret** - Wmfd2893gb7
 
-**levelID** - The ID of the level to comment on
+**levelID** - The ID of the level to comment on. If commenting on a list, the ID should be negative
 
 **percent** - The level percentage shown on the comment
 
@@ -24,9 +24,9 @@ Uploads a comment to a user level.
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 

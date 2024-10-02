@@ -28,7 +28,29 @@ GS values contain Information regarding certain aspects of the game
 | 20 | Lava Shards |
 | 21 | Demon Keys|
 | 22 | Total Orbs Collected |
+| 23 | Earth Shards |
+| 24 | Blood Shards |
+| 25 | Metal Shards |
+| 26 | Light Shards |
+| 27 | Soul Shards |
+| 28 | Moons |
+| 29 | Diamond Shards |
+| 30 | Fire Path Progress |
+| 31 | Ice Path Progress |
+| 32 | Poison Path Progress |
+| 33 | Shadow Path Progress |
+| 34 | Lava Path Progress |
+| 35 | Earth Path Progress |
+| 36 | Blood Path Progress |
+| 37 | Metal Path Progress |
+| 38 | Light Path Progress |
+| 39 | Soul Path Progress |
+| 40 | Amount of Completed Gauntlets |
+| 41 | List Rewards |
 | unique_{LevelID}_{Coins Collected} | The Coins Collected on the Official Levels
+| unique_secretB03 | Glubfub coin |
+| unique_secret04 | Official level page secret coin |
+| unique_secret06 | 'Sparky' coin |
 
 ## GS_completed
 
@@ -41,10 +63,10 @@ all completed levels
 | `d_{levelID}` | completed daily
 | `g_{levelID}` | completed gauntlet
 | `star_{levelID}` | Collected Stars|
-| `dstar_{levelID}` | Collected Stars for daily|
+| `dstar_{timelyID}` | Collected Stars for daily|
 | `gstar_{levelID}` | Collected Stars for gauntlet |
 | `demon_{levelID}` | Collected Demon |
-| `ddemon_{levelID}` | Collected Demon for weekly|
+| `ddemon_{timelyID}` | Collected Demon for weekly|
 | `gdemon_{levelID}` | Collected Demon for gauntlet|
 
 ## GS_3
@@ -192,7 +214,7 @@ GS_21 Contains the reward data for the gauntlets you have completed
 | key | Description |
 |:----|:------|
 | `g_{GauntletID}` | the gauntlet number |
-| `000{ChestID}` | ChestIDs for Reward Chests |
+| `00{ChestID}` | ChestIDs for Reward Chests |
 | `k_{number}` | RewardItems -> the number corresponds to how many RewardItems the player will recieve |
 | `kCEK` | The [encoder keys](/resources/client/gamesave/kCEK?id=kcek-8-and-9-structure) |
 
@@ -209,6 +231,13 @@ GS_21 Contains the reward data for the gauntlets you have completed
 | 0007 | YouTube Chest |
 | 0008 | Twitter Chest |
 | 0009 | Facebook Chest |
+| 0010 | Twitch Chest |
+| 0011 | Discord Chest |
+| 0022 | Zolguroth Chest (repeatedly poke Shopkeeper and return to shop) |
+| 0023 | Help Button Chest |
+| 0024 | Reddit Chest |
+
+All chests between 0012 and 0021 are Ad Chests from the free versions of the game.
 
 
 ## GS_22
@@ -244,3 +273,39 @@ GS_25 Contains the reward data for every weekly demon you have completed
 | `d100{number}` | The Timely ID of the weekly Demon you have beaten |
 | `k_{number}` | RewardItems -> the number corresponds to how many RewardItems the player will recieve |
 | `kCEK` | The [encoder keys](/resources/client/gamesave/kCEK?id=kcek-8-and-9-structure) |
+
+## GS_26
+
+GS_26 is your currently active path. The value is the same as the path key in GS_value. Contary to most GS's, it's an integer value and not a dictionary.
+
+| Structure |
+|:----------|
+| `<k>GS_26</k><i>{path}</i>` |
+
+## GS_27
+
+GS_27 contains the List Rewards you have acquired
+
+| Structure |
+|:----------|
+|`<k>lr_{listID}</k><s>{diamonds}</s>`|
+
+## GS_28
+
+GS_28 contains your enabled items. All of them are strings (although they act as booleans). The animations (18-20) are set to 1 after doing.. something? even if not unlocked. The music unlocker is set to 1 by default as soon as you start the game. The music customize is set to 1 permanently when you unlock it.
+
+| Key   | Description          |
+|:------|:---------------------|
+| 17_12 | Music Unlocker       |
+| 18_12 | Slow Robot Walk      |
+| 19_12 | Fast Robot Run       |
+| 20_12 | Spider Naruto Run    |
+| 21_12 | Music Customizer     |
+
+## GS_29
+
+GS_29 is unknown but is related to trying to fix some path bug. Contary to most GS's, it's a boolean value and not a dictionary.
+
+| Structure |
+|:----------|
+| `<k>GS_29</k><t />` |

@@ -1,6 +1,6 @@
 # The RobTop Cipher
 The RobTop Cipher refers to the combination of Base64 (url-safe) + XOR used frequently within Geometry Dash as a form of encryption.
-It is used within places such as passwords (GJP) or save data on Windows.
+It is used within places such as vault codes, passwords before 2.2 (GJP) or save data on Windows.
 The cipher may utilise either the cycled or static variant of the XOR cipher depending on where the ciphertext originates from (such as save data or the
 encoded password). To find out which variant is used, you may consult the [key reference material](/reference/keys.md#xor-keys).
 

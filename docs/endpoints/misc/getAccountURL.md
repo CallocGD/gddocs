@@ -1,12 +1,12 @@
 # getAccountURL.php
 
-Gets the URL for the data server. Official domain name is [http://geometrydash.com](http://geometrydash.com), but the server returns [http://69.164.210.48](http://69.164.210.48).
+Gets the URL for the data server.
 
 ## Parameters
 
 ### Required Parameters
 
-**accountID** - Anyone's account ID
+**accountID** - Any valid account ID
 
 **type** - used to decide which endpoint is used after the data server is found - 1 = backup data/ 2 = sync data
 
@@ -14,7 +14,7 @@ Gets the URL for the data server. Official domain name is [http://geometrydash.c
 
 ## Response
 
-[http://69.164.210.48](http://69.164.210.48)
+Usually [https://www.robtopgames.org](https://www.robtopgames.org). However, without a valid accountID and at type 2, [https://www.robtopgames.net](https://www.robtopgames.net) is returned instead
 
 ## Example
 
@@ -26,7 +26,7 @@ Gets the URL for the data server. Official domain name is [http://geometrydash.c
 import requests
 
 data = {
-        "accountID": 173831,
+        "accountID": 71,
         "type": 2,
         "secret": "Wmfd2893gb7"
 }
@@ -37,7 +37,7 @@ print(req.text)
 
 **Response**
 ```py
-http://69.164.210.48
+https://www.robtopgames.net
 ```
 
 <!-- tabs:end -->

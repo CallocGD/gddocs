@@ -1,4 +1,4 @@
-# suggestGJStars.md
+# suggestGJStars20.php
 
 Endpoint used by moderators to send levels to RobTop
 
@@ -20,7 +20,7 @@ Endpoint used by moderators to send levels to RobTop
 
 **binaryVersion** - the binary version
 
-**feature** - 1 for feature, 0 for star rate
+**feature** - 0 for star rate, 1 for feature, 2 for epic, 3 for legendary, 4 for mythic
 
 **gdw** - 0
 
@@ -48,7 +48,7 @@ data = {
         "secret": "Wmfp3879gc3"
 }
 
-req = requests.post("http://boomlings.com/database/suggestGJStars.php", data=data)
+req = requests.post("http://boomlings.com/database/suggestGJStars20.php", data=data)
 print(req.text)
 
 ```

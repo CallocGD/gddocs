@@ -4,7 +4,6 @@
 
 A level is a playable object in Geometry Dash, namely coming with data that explains on what it is, and the string that the client interprets, known as a [level string](/topics/levelstring_encoding_decoding).
 
-
 A typical level server response is structured with a `key:value:key:value` pairing and is then split with a `|`
 
 *keep in mind that the value for key `4` will be replaced with `{levelString}` as it is too big to show*
@@ -27,8 +26,8 @@ Keys indicated with an asterisk (\*) are only returned from the downloadGJLevel2
 
 | Key | Name/Value                | Type                                         | Description                                                              
 |-----|---------------------------|----------------------------------------------|--------------------------------------------------------------------------
-| 1   | levelID                  | **Integer**                                   | The id of the level                                                      
-| 2   | levelName                | **String**                                    | The name of the level                                                    
+| 1   | levelID                  | **Integer**                                   | The id of the level                                                     
+| 2   | levelName                | **String**                                    | The name of the level                                               
 | 3   | description              | **String**                                    | The level description, encoded in [base64](/topics/encryption/base64.md) 
 | 4*  | levelString              | **[Level String](/topics/levelstring_encoding_decoding)**| All the data for the level                               
 | 5   | version                  | **Integer**                                   | The version of the level published                                       
@@ -44,12 +43,12 @@ Keys indicated with an asterisk (\*) are only returned from the downloadGJLevel2
 | 16  | dislikes                 | **Integer**                                   | dislikes - likes |
 | 17  | demon                    | **Bool** 				                     | If the level's difficulty is demon    
 | 18  | stars                    | **Integer** 				                     | The amount of stars rewarded for completing the level
-| 19  | featureScore             | **Integer** 	                                 | 0 if the level is not featured, otherwise a positive number. The higher it is, the higher the level appears on the featured levels list. 
+| 19  | featureScore             | **Integer** 	                                 | 0 if the level is not featured, otherwise a positive number. The higher it is, the higher the level appears on the featured levels list.
 | 25  | auto                     | **Bool** 				                     | If the level's difficulty is auto
 | 26  | recordString             | **String**                                    | appears in the [GJGameLevel parser](https://imgur.com/a/S2bWLCC) but is unused
 | 27* | password                 | **Encrypted String** 	                     | The password required to copy the level. It is XOR encrypted with a key of 26364
-| 28* | uploadDate               | **String** 				                     | The approximate date the level was uploaded on 
-| 29* | updateDate               | **String** 				                     | The approximate date the level was last updated on 
+| 28* | uploadDate               | **String** 				                     | The approximate date the level was uploaded on
+| 29* | updateDate               | **String** 				                     | The approximate date the level was last updated on
 | 30  | copiedID                 | **Integer** 				                     | The ID the of the original level (if the level was copied)   
 | 31  | twoPlayer                | **Bool** 				                     | Whether the level uses two player mode
 | 35  | customSongID             | **Integer** 				                     | The ID of the custom Newgrounds song used in the level    
@@ -59,19 +58,24 @@ Keys indicated with an asterisk (\*) are only returned from the downloadGJLevel2
 | 39  | starsRequested           | **Integer** 				                     | The star value requested for the level     
 | 40* | lowDetailMode            | **Bool** 				                     | If the level has a low detail checkbox    
 | 41* | dailyNumber              | **Integer** 				                     | Daily/weekly levels only. Returns which daily/weekly the level was (e.g. the 500th daily level). Subtract 100,000 if the level is weekly
-| 42  | epic                     | **Integer** 				                     | If the level has an epic rating    
+| 42  | epic                     | **Integer** 				                     | The epic rating for the level. 0 = none, 1 = epic, 2 = legendary, 3 = mythic.   
 | 43  | demon Difficulty         | **Integer** 				                     | The difficulty of the demon rating. 3 = easy, 4 = medium, 0 = hard, 5 = insane, 6 = extreme. Can also be used to determine the level difficulty non-demons had before rating as a side-effect of the voting system.
 | 44  | isGauntlet               | **Bool**                                      | if the level is in a gauntlet |
 | 45  | objects                  | **Integer** 				                     | The amount of objects in the level, used to determine if the level is considered "large". It caps at 65535     
 | 46  | editorTime               | **Integer** 				                     | the total number of seconds spend on the current copy of a level
 | 47  | editorTime(Copies)       | **Integer** 				                     | The accumulative total of seconds spend on previous copies of the level
-| 48  | settingsString [Unused]  | **String**                                    | It was found in early 2.1 coming from the servers and was removed shortly after. The `December 2019 2.2 Leaks` however have information regarding it showing that it is called `settingsString` but, there is no information regarding its usage |
+| 48  | settingsString [Unused]  | **String**                              | It was found in early 2.1 coming from the servers and was removed shortly after. The `December 2019 2.2 Leaks` however have information regarding it showing that it is called `settingsString` but, there is no information regarding its usage |
+| 52* | songIDs                  | **Comma-Separated List**                | The list of all song IDs in the level, separated by commas
+| 53* | sfxIDs                   | **Comma-Separated List**                | The list of all SFX IDs in the level, separated by commas
+| 54  | unknown                  | **Integer**                             | Unknown value, perhaps robtop-only? (corresponds to k106 in the save file) |
+| 57* | verificationTime         | **Integer**                             | How long the level took to verify (in frames, assume 240 FPS)
 
 ### Trivia
 
-- The getGJLevels endpoint returns the keys `46` and `47` however they aren't actually correct
+- The getGJLevels endpoint returns the keys `46` and `47` however they aren't actually correct (as of 2.1)
+
+- Keys `46` and `47` are also capped at the 24-bit integer limit so any time longer than around 4660 hours won't be accurate
 
 - key `45` caps at the 16-bit integer limit so any level with more objects won't be accurate
 
-- Surprisingly, key `42` is classified as an `Integer` rather than a `Bool` 
-
+- Key `57` caps at the 24-bit integer limit so any time longer than around 465 hours won't be accurate

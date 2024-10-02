@@ -40,7 +40,7 @@ A list of all known keys can be found in the table below
 
 | Key | Name/Value                | Type                                         | Description                                                              
 |-----|---------------------------|----------------------------------------------|--------------------------------------------------------------------------
-| 1   | levelID                   | **Integer**                                  | The levelID linked to the comment
+| 1   | levelID                   | **Integer**                                  | The levelID linked to the comment. This ID is negative if the comment is on a list
 | 2	  | comment					  | **String**									 | The comment left by the user, encoded in [base64](/topics/encryption/base64.md)
 | 3   | authorPlayerID					  | **Integer**									 | The player ID of the comment author |
 | 4   | likes					  | **Integer**									 | The amount of likes the comment has
@@ -49,7 +49,7 @@ A list of all known keys can be found in the table below
 | 7   | spam                      | **Bool**                                     | If a comment has been flagged as spam
 | 8   | authorAccountID | **Integer** | The accountID of the comment author |
 | 9   | age						  | **String**									 | How long ago the comment was posted (e.g. "2 months")
-| 10  | percent*				  | **Integer**									 | The percent the player put in their comment
+| 10  | percent*				  | **Integer**									 | The percent the player put in their comment. Also doesn't apply to List Comments
 | 11  | modBadge*                 | **Integer**                                  | The Mod Badge of a moderator commenting
 | 12  | moderatorChatColor*       | **String**									 | Comma separated list of the RGB values of the moderator's chat color - only appears if the players `modBadge > 0`
 

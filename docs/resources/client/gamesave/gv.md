@@ -37,6 +37,7 @@ Game Variables (gvs) are found inside of the [ValueKeeper](/resources/client/gam
 | gv_0032 | forceTimerEnabled -> seems to be unused |
 | gv_0033 | ChangeSongPath |
 | gv_0034 | GameCenterEnabled |
+| gv_0035 | Small Grid Step - 1.9 |
 | gv_0036 | PreviewMode (editor) |
 | gv_0037| showGround (editor) |
 | gv_0038 | showGrid (editor) |
@@ -46,14 +47,14 @@ Game Variables (gvs) are found inside of the [ValueKeeper](/resources/client/gam
 | gv_0042 | increaseMaxLevels |
 | gv_0043 | effectLinesEnabled (editor) |
 | gv_0044 | drawTriggerBoxes (editor) |
-| gv_0045 | debugDraw (editor) |
+| gv_0045 | Show Hitboxes (editor) |
 | gv_0046 | hideUIOnTest (editor) |
 | gv_0047 | showedProfileText |
 | gv_0048 | viewedOwnProfile |
 | gv_0049 | buttonsPerRow (editor) |
 | gv_0050 | buttonRows (editor) |
 | gv_0051 | showedNGMessage (editor) |
-| gv_0052 | fastPracticeReset|
+| gv_0052 | Enable Faster Reset |
 | gv_0053 | Free Games Popup |
 | gv_0055 | checkIfServerOnline.php |
 | gv_0056 | disableObjectAlert |
@@ -71,6 +72,7 @@ Game Variables (gvs) are found inside of the [ValueKeeper](/resources/client/gam
 | gv_0068 | quickCheckpointMode |
 | gv_0069 | commentMode |
 | gv_0070 | showedUnlistedLevelMessage |
+| gv_0071 | Hide Practice Buttons |
 | gv_0072 | disableGravityEffect |
 | gv_0073| newCompletedFilter|
 | gv_0074| showRestartButton|
@@ -90,7 +92,7 @@ Game Variables (gvs) are found inside of the [ValueKeeper](/resources/client/gam
 | gv_0092| onlineLevels folder number |
 | gv_0093| increaseLocalLevelsPerPage |
 | gv_0094| moreCommentsMode |
-| gv_0095| flippyUselessMode (Just Dont)|
+| gv_0095| flippyUselessMode ("Do Not..." (formerly "Just Don't"))|
 | gv_0096| switchWaveTrailColor|
 | gv_0097| enableLinkControls (editor) |
 | gv_0098| levelLeaderboardType |
@@ -98,26 +100,65 @@ Game Variables (gvs) are found inside of the [ValueKeeper](/resources/client/gam
 | gv_0100| practiceDeathEffect|
 | gv_0101| forceSmoothFix |
 | gv_0102 | smoothFixInEditor |
-
-
-### 2019 Leak GV's
-
-| Key | Value|
-| :-- |:-----------|
-| gv_0103 | Layer Locking |
+| gv_0103 | Layer Locking (editor) |
 | gv_0104 | Record Order |
 | gv_0105 | StartPos Playback |
 | gv_0106 | Show Meltdown Promo |
 | gv_0108 | Auto Low Detail |
 | gv_0109 | Level Info Label |
 | gv_0110 | Fast Editor Preview |
+| gv_0112 | Increase Scale Limit (editor) |
 | gv_0113 | Flip Platformer Controls |
 | gv_0115 | Show FPS |
 | gv_0116 | Use Custom FPS |
 | gv_0117 | Preview Particle |
 | gv_0118 | Preview Animation |
 | gv_0119 | Dont Save Level Data |
-
+| gv_0121 | Hide Invisible (editor) |
+| gv_0122 | Disable Menu Music |
+| gv_0125 | Unlock Practice Music (editor) |
+| gv_0126 | Decimal Percentage |
+| gv_0127 | Save Gauntlet Levels |
+| gv_0128 | Lock Cursor In-Game |
+| gv_0129 | Disable Portal Labels |
+| gv_0130 | Enable Orb Labels |
+| gv_0131 | Use Nearby as Reference (smart template) |
+| gv_0132 | Dont Delete (smart template) |
+| gv_0133 | Group ID Filter (editor) |
+| gv_0134 | Hide Attempts |
+| gv_0135 | Hide Attempts in Practice Mode |
+| gv_0136 | Enable Extra LDM |
+| gv_0137 | Hide Particle Icons (editor) |
+| gv_0139 | Color Channel Filter (editor) |
+| gv_0140 | Disable Orb Scale |
+| gv_0141 | Disable Trigger Orb Scale |
+| gv_0142 | Reduce Audio Quality |
+| gv_0144 | Audio Visualizer |
+| gv_0145 | Show Time |
+| gv_0146 | Disable Checkpoints |
+| gv_0147 | Search Folder Name (SFX Library) |
+| gv_0148 | Compact Mode (SFX Library) |
+| gv_0149 | Show Clicks (editor) |
+| gv_0150 | Auto Pause on Test (editor) |
+| gv_0151 | Start Optimization (editor) |
+| gv_0152 | Hide Path (editor) |
+| gv_0153 | Explode Player on Death |
+| gv_0155 | Disable Shader Anti-Aliasing |
+| gv_0156 | Disable Paste State Groups (editor) |
+| gv_0157 | Level Upload Guidelines Shown |
+| gv_0158 | Preview Shaders (editor) |
+| gv_0159 | Audio Fix 01 |
+| gv_0163 | Enable Quick Keys |
+| gv_0164 | Level Leaderboard Mode |
+| gv_0166 | Show Hitboxes (in practice mode) |
+| gv_0167 | Confirm Exit |
+| gv_0168 | Fast Menu |
+| gv_0169 | Small Warp Buttons (editor) |
+| gv_0170 | Borderless Fullscreen |
+| gv_0171 | Disable Player Hitbox |
+| gv_0172 | Disable Shake (2.2) |
+| gv_0173 | Ignore Damage (playtesting outside of editor) |
+| gv_0174 | Hide Playtest Text |
 
 # Unlocked Game Variables
 
@@ -151,14 +192,19 @@ Unlocked Game Variables (ugv) are used to check if ingame events have been compl
 | ugv_22 | YouTube Chest unlocked |
 | ugv_23 | FaceBook Chest unlocked |
 | ugv_24 | Twitter Chest unlocked |
-
-### 2019 Leak UGV's
-
-| Key | Value|
-| :-- |:-----------|
-| ugv_25 | FireBird GateKeeper |
-| ugv_26 | Twitch Chest Unlocked |
-| ugv_27 | Discord Chest Unlocked |
+| ugv_25 | Explorers unlocked |
+| ugv_26 | Twitch Chest unlocked |
+| ugv_27 | Discord Chest unlocked |
+| ugv_28 | Clicked The Tower |
+| ugv_29 | Entered The Tower |
+| ugv_30 | Accepted Geometry Dash's Terms of Service |
+| ugv_31 | Zolguroth Encountered |
+| ugv_32 | Reddit Chest unlocked |
+| ugv_33 | The Tower Floor 1 completed |
+| ugv_34 | Diamond Shop Unlocked |
+| ugv_35 | Mechanic Unlocked |
+| ugv_36 | Mechanic Dialogue |
+| ugv_37 | Diamond Shopkeeper Dialogue |
 
 ### Undiscovered/unknown GV's
 
@@ -167,13 +213,10 @@ Unlocked Game Variables (ugv) are used to check if ingame events have been compl
 | 0017  | **False** | |
 | 0020  | **False** | |
 | 0021  | **False** | |
-| 0035  | **False** | |
 | 0054  | **False** ||
-| 0071  | **False** ||
 | 0080  | **False** ||
 | 0085  | **False** ||
 | 0086  | **False** ||
 | 0087  | **False** ||
-| 0112  | **True** | Used in `EditorUI` (**2019 Leak**) |
 | 0114  | **True** | Used in `PlayerObject` (**2019 Leak**) |
 | 0120  | **True** | Shown in RobTop's 2020 Twitch Streams |

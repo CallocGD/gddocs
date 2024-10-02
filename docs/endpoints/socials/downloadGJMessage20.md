@@ -8,7 +8,7 @@ Download a message.
 
 **accountID** - The person's account ID
 
-**gjp** - The blocking person's [GJP](/topics/encryption/gjp.md)
+**gjp2** - The person's [GJP2](/topics/encryption/gjp.md)
 
 **messageID** - The ID of the message to read
 
@@ -16,9 +16,9 @@ Download a message.
 
 ### Optional Parameters
 
-**gameVersion** - 21
+**gameVersion** - 22
 
-**binaryVersion** - 35
+**binaryVersion** - 42
 
 **gdw** - 0
 
