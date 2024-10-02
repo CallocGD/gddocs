@@ -4,9 +4,15 @@
 
 # GDDocs
 
-**Some documentation for Geometry Dash's servers, and the game itself.**
+**Some documentation for Geometry Dash's servers, and the game itself. This is a detached fork of GDDocs**
 
 ----
+
+## Why I forked it 
+
+- There are many things wrong with it even things that others should know about and it's more awful than you think just how much is being actually hidden from you
+  and also broken enpoints due to that fact. =( loginGJAccount.php is just one example that I had to go in and fix.
+
 
 **GDDocs** is a project built to openly give advanced information and readable information for aspiring developers looking to interface with Geometry Dash. Primarily, we aim to create this as a website for people to learn more about the inner workings of geometry dash, along with it's data.
 
