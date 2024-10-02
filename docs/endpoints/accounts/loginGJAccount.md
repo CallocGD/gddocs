@@ -1,6 +1,9 @@
 # LoginGJAccount
 
 > This endpoint is used to log into a players Geometry Dash account.
+```
+https://www.boomlings.com/database/accounts/loginGJAccount.php
+```
 
 ## Parameters
 
