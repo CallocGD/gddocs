@@ -14,6 +14,7 @@ https://www.boomlings.com/database/accounts/registerGJAccount.php
 | Parameter | Explanation | Optional |
 | --- | --- | --- |
 | `userName` | The username of the account to create | `False` |
+| `gjp2` | The sha1 hash of the password , salt is: `mI29fmAnxgTs` | `True` (as long as no password param was given) |
 | `password` | The password of the account to create | `False` |
 | `email` | The email of the account to create | `False` |
 | `secret` | Account Secret: `Wmfv3899gc9` | `False` |
