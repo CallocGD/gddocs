@@ -11,7 +11,10 @@
 ## Why I forked it 
 
 - There are many things wrong with it even things that others should know about and it's more awful than you think just how much is being actually hidden from you
-  and also broken enpoints due to that fact. =( loginGJAccount.php is just one example that I had to go in and fix.
+  and also broken enpoints due to that fact. =(
+- loginGJAccount.php is just one example that I had to go in and fix. Many will soon follow as I discover more shit and problems within in gd's code.
+- to develop a better gdpy library in the future and one that will acutally be healthy and have a better lifetime than the previous version
+- Renamed parameters that are made to try and stop you from using certain endpoints. (I'm fixing that)
 
 
 **GDDocs** is a project built to openly give advanced information and readable information for aspiring developers looking to interface with Geometry Dash. Primarily, we aim to create this as a website for people to learn more about the inner workings of geometry dash, along with it's data.
