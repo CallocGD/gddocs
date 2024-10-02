@@ -2,7 +2,9 @@
 
 Loads account data
 
-**Note:** This page is on the account server. You can find the domain name by sending a request to /database/getAccountURL.php (currently http://www.robtopgames.org) 
+**Note:** This page is on the account server. You can find the domain name by sending a request to /database/getAccountURL.php (currently http://www.robtopgames.org)  
+
+**Secondary Note:** This enpoint can be unfair as the upload limits for syncing are very unfriendly.
 
 ## Parameters
 
