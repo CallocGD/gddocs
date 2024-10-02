@@ -1,6 +1,13 @@
 # Register Account
 
 > This endpoint is used to register an account
+```
+http://www.boomlings.com/database/accounts/registerGJAccount.php
+```
+> the https endpoint should also work
+```
+https://www.boomlings.com/database/accounts/registerGJAccount.php
+```
 
 ## Parameters
 
@@ -28,6 +35,6 @@
 | -3 | Email taken |
 | -4 | Username is longer than 20 characters |
 | -5 | Invalid Password |
-| -6 | Invalid Email |
+| -6 | Invalid Email / Ratelimited Registration (2 registrations per hour is the known ratelimit) |
 | -8 | Password to short |
 | -9 | Username to short |
