@@ -6,7 +6,7 @@
 
 | Parameter  | Explanation                                                                                           | Optional |
 | :--------- | :---------------------------------------------------------------------------------------------------- | :------- |
-| `udid`     | [The user's Universal Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier) aka the uuid | `False`  |
+| `udid`     | [The user's Universal Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier) this is actually the uuid robtop tried to trick you to stop botters | `False`  |
 | `userName` | The username for the account the player is trying to log into                                         | `False`  |
 | `password` | The plaintext password for the account the player is trying to log into                               | `False`  |
 | `sID`      | The player's steam ID                                                                                 | `True`   |
@@ -28,9 +28,10 @@ If the request was not successful, there are 7 different error codes that can be
 
 | Error Code | Meaning                                                                                                   |
 | :--------- | :-------------------------------------------------------------------------------------------------------- |
-| `-1`       | Generic Error (You fucked something up)                                                                   |
+| `-1`       | Generic Error (you fucked something up)                                                                   |
 | `-8`       | If the user's password is less than 6 characters long                                                     |
 | `-9`       | If the user's Username is less than 3 characters long                                                     |
 | `-11`      | If the user's login credentials are incorrect                                                             |
 | `-12`      | If the user's account is disabled                                                                         |
 | `-13`      | If the account the user is trying to log into has a different steam ID to to that account **(Unused)** |
+
